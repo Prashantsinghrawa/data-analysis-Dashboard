@@ -9,8 +9,7 @@ How can a retailer use customer shopping data to identify purchasing trends, imp
 
 ## Dataset
 - 3,900 rows, 18 columns: demographics, purchase details, shopping behavior (discounts, shipping, reviews, previous purchases, frequency).
-- Source: _add the link to the dataset here (e.g. Kaggle)._
-
+  
 ## Workflow
 1. Python (pandas): loaded and explored the data, imputed 37 missing review ratings with the median rating of each product category, standardized column names to snake_case, engineered `age_group` (quartile bins) and `purchase_frequency_days`, and dropped `promo_code_used` because it duplicated `discount_applied`.
 2. SQL: loaded the cleaned table into a relational database and answered 10 business questions using aggregation, subqueries, `CASE`, CTEs and window functions (`ROW_NUMBER`).
